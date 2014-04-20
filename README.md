@@ -6,6 +6,6 @@ TUGAS BESAR LAYANAN WEB 2014
 oleh :
 Agus Supriatman
 Dian Ramdoni Saputra
-Fitria Fauziah Ahmad
+Fitria Fauziah Ahmad 117006130
 Stefantus Crisandy
 Karina
