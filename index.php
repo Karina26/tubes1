@@ -43,7 +43,7 @@ function scrapedetiksportbola($url){
 	return $array;
 }
 
-$data = scrapeIFUNSIL("http://sport.detik.com/sepakbola?st70");
+$data = scrapedetiksportbola("http://sport.detik.com/sepakbola?st70");
 
 
 echo "<pre>";
