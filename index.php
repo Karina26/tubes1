@@ -8,7 +8,7 @@ $startUrl = "http://sport.detik.com/sepakbola?st70";
 // anchor img src 1 "//li[@class= 'first']//img/@src"
 
 
-function scrapeIFUNSIL($url){
+function scrapedetiksportbola($url){
 	$baseUrl = "http://sport.detik.com/";
 	$array = array();
 	$xpath = new XPATH($url);	
