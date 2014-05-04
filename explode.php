@@ -1,48 +1,39 @@
-<?php
-
-$fh = fopen("sport.txt", "r");
-
-while(!feof($fh)){
-	$current = trim(fgets($fh));
-	$iArray[] = explode("*", $current);
-}
-$count = count($iArray);
-for($x=0; $x<$count; $x++){
-	$newArray[$x]["imageSrc"] = $iArray[$x][0];
-	$newArray[$x]["title"] = $iArray[$x][1];
-	$newArray[$x]["link"] = $iArray[$x][2];
-	
-}
-
-
-?>
-
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Detik SPORT</title>
-	<link rel="stylesheet" href="style.css">
-</head>
+<!DOCTYPE html>
+<html>
 <body>
-	<div class="container">
-	<h1>Detik SPORT SCRAPE</h1>
-	<?php
-	foreach($newArray as $new){
-		/*echo '<div class="video">';
-		echo '<img src ="' .$new['imageSrc'] . '" alt="youtube image">';
-		echo '<a href="' . $new['link'] . '"><h4>' . $new['title'] . '</h4></a>';*/
+<center>
+<title> Real Madrid Headline News </title>
+<h1>REAL MADRID NEWS</h1>
+<table>
+	<tr>
+		<td></td>
+		<td><center><img alt="logorealmadrid" src="logoreal.gif" height="20%" width="20%"></center></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td width="20%"></td>
+		<td>
+<?php
+$html = "";
+$url = "http://www.goal.com/id-ID/feeds/team-news?id=124&fmt=rss&ICID=CP_124"; 
+$xml = simplexml_load_file($url);
+for($i = 0; $i < 10; $i++){
 
-	
-	echo '<table border="0" cellpadding="1" cellspacing="2">';
-	echo '<tr class="row">';
-	echo '<td><img src="' .$new['imageSrc']. '" width="60px" height="60px"  alt="image"></td>';
-	echo '<td class="col"><a href="' .$new['link']. '"><h5>' .$new['title']. '</h5></a></td>';
-	echo '</tr>';
-	echo '</table>';
-	}
-
-	?>
-	</div>
+$title = $xml->channel->item[$i]->title;
+$link = $xml->channel->item[$i]->link;
+$description = $xml->channel->item[$i]->description;
+$pubDate = $xml->channel->item[$i]->pubDate;
+									
+$html .= "<a href='$link' target='_blank'><h3>$title</h3></a>";
+$html .= "$description<br>";
+$html .= "<br> $pubDate<hr />";
+} 
+echo $html;
+?>
+		</td>
+		<td width="20%"></td>
+	</tr>
+</table>
+</center>
 </body>
 </html>
