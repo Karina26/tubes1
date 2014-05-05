@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body background="197042_431320693589160_999032084_n.jpg">
+<body background="gambar/American-football-ppt-backgrounds-1000x750.jpg">
 <center>
 <title> Real Madrid Headline News </title>
 <table width="553" height="25" align="center" bgcolor="#000066">
@@ -11,7 +11,7 @@
 <table width="518" bgcolor="#7591DB">
 	<tr>
 		<td></td>
-		<td><center><img alt="logorealmadrid" src="logoreal.gif" height="20%" width="20%"></center></td>
+		<td><center><img alt="logorealmadrid" src="gambar/logorealmadrid.gif" height="26%" width="31%"></center></td>
 		<td></td>
 	</tr>
 	<tr>
@@ -36,7 +36,7 @@ echo $html;
 		<td width="20%"></td>
 	</tr>
 	<tr>
-		<td><center><img alt="logorealmadrid" src="logoreal.gif" height="20%" width="20%"></center></td>
+		<td><center><img alt="logorealmadrid" src="gambar/logorealmadrid.gif" height="23%" width="48%"></center></td>
 		<td>
 			<h1>Dibuat oleh :</h1>
 			<table>
@@ -68,7 +68,8 @@ echo $html;
 		</td>
 		<td></td>
 	</tr>
-</table>
+</table><br>
+<img src="gambar/madrid.JPG" height="200" width="900">
 </center>
 </body>
 </html>
