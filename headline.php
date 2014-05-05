@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body bgcolor="#FFFFCC">
 <center>
 <title> Real Madrid Headline News </title>
-<h1>REAL MADRID NEWS</h1>
-<table>
+<table width="553" align="center">
+<tr>
+<td><font color="#FF3300" face="><marquee direction="left"><h1><p align="center">REAL MADRID NEWS</h1></p></marquee></font></td>
+
+</tr></table>
+<table width="504">
 	<tr>
 		<td></td>
 		<td><center><img alt="logorealmadrid" src="logoreal.gif" height="20%" width="20%"></center></td>
